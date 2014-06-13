@@ -130,8 +130,8 @@ function Get_Life_Expentancy(range_upper){
         case 5:
         case 6:
         case 7:
-         result_low=(data.life_expen[range].life_exp-data.life_expen[range].life_exp_SE).toFixed(1);
-         result_high=(data.life_expen[range].life_exp+data.life_expen[range].life_exp_SE).toFixed(1);
+         result_low=(data.life_expen[range].life_exp-data.life_expen[range].life_exp_SE).toFixed(1)*1.95;
+         result_high=(data.life_expen[range].life_exp+data.life_expen[range].life_exp_SE).toFixed(1)*1.95;
          document.getElementById("result_Life_Expentancy").innerHTML = result_low+"-"+result_high+" Years";  
         break;
         case 8:
@@ -154,8 +154,8 @@ function Get_Life_Lost(range_upper){
         case 5:
         case 6:
         case 7:
-         result_low=(data.life_expen[range].life_lost-data.life_expen[range].life_lost_SE).toFixed(1);
-         result_high=(data.life_expen[range].life_lost+data.life_expen[range].life_lost_SE).toFixed(1);
+         result_low=(data.life_expen[range].life_lost-data.life_expen[range].life_lost_SE).toFixed(1)*1.95;
+         result_high=(data.life_expen[range].life_lost+data.life_expen[range].life_lost_SE).toFixed(1)*1.95;
          console.log(data.life_expen[range].life_lost);
          document.getElementById("result_Life_Lost").innerHTML = result_low+"-"+result_high+" Years";  
         break;
@@ -179,11 +179,11 @@ function Get_Life_Expenditure(range_upper){
         case 5:
         case 6:
         case 7:
-         result_low=(data.life_expen[range].cost_3-data.life_expen[range].cost_3_SE).toFixed(1);
-         result_high=(data.life_expen[range].cost_3+data.life_expen[range].cost_3_SE).toFixed(1);
+         result_low=(data.life_expen[range].cost_3-data.life_expen[range].cost_3_SE).toFixed(1)*1.95;
+         result_high=(data.life_expen[range].cost_3+data.life_expen[range].cost_3_SE).toFixed(1)*1.95;
          document.getElementById("result_expenditure_3").innerHTML = result_low+"-"+result_high+" USD"; 
-         result_low=(data.life_expen[range].cost_5-data.life_expen[range].cost_5_SE).toFixed(1);
-         result_high=(data.life_expen[range].cost_5+data.life_expen[range].cost_5_SE).toFixed(1);
+         result_low=(data.life_expen[range].cost_5-data.life_expen[range].cost_5_SE).toFixed(1)*1.95;
+         result_high=(data.life_expen[range].cost_5+data.life_expen[range].cost_5_SE).toFixed(1)*1.95;
          document.getElementById("result_expenditure_5").innerHTML = result_low+"-"+result_high+" USD"; 
         break;
         case 8:
