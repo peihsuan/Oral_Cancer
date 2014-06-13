@@ -1,0 +1,30 @@
+{
+	"20-29":{
+		"life_exp":18.6,"life_exp_SE":7.9,"life_lost":29.8,"life_lost_SE":7.9,
+		"3_cost":25404,"3_cost_SE":3396,"5_cost":22926,"5_cost_SE":2870
+	},
+	"30-39":{
+		"life_exp":14.3,"life_exp_SE":2.4,"life_lost":26,"life_lost_SE":2.4,
+		"3_cost":26306,"3_cost_SE":2291,"5_cost":24321,"5_cost_SE":1775
+	},
+	"40-49":{
+		"life_exp":13.9,"life_exp_SE":1,"life_lost":18.6,"life_lost_SE":1,
+		"3_cost":28768,"3_cost_SE":2035,"5_cost":26522,"5_cost_SE":2141
+	},
+	"50-59":{
+		"life_exp":12.5,"life_exp_SE":0.6,"life_lost":12.3,"life_lost_SE":0.6,
+		"3_cost":28172,"3_cost":2033,"5_cost":26107,"5_cost":2214
+	},
+	"60-69":{
+		"life_exp":"8.6(0.5)","life_lost":"8.7(0.5)",
+		"3_cost":"26213±2259","5_cost":"24515±1762"
+	},
+	"70-79":{
+		"life_exp":"5.4(0.3)","life_lost":"5.7(0.3)",
+		"3_cost":"21807±1848","5_cost":"20691±1750"
+	},
+	">=80":{
+		"life_exp":"NA","life_lost":"NA",
+		"3_cost":"NA","5_cost":"NA"
+	},
+}
