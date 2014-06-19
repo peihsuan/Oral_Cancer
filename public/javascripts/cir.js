@@ -106,9 +106,9 @@ function Get_Result(){
   }
   sum /= 100000;    // The table is original_rate * 10^5
   result_for_print = 1 - Math.exp(-sum);
-  result_for_print *= 100;   //Because %
+ // result_for_print *= 100;   //Because %
   document.getElementById("CIR_range").innerHTML = range_a+"-"+range_b;
-  document.getElementById("result_CIR").innerHTML = result_for_print+"%";
+  document.getElementById("result_CIR").innerHTML = (result_for_print).toFixed(5);
  // document.getElementById("result_Life_Expentancy").innerHTML = Get_Life_Expentancy()+"%";
  Get_Life_Expectancy(bound_b);
  Get_Life_Lost(bound_b);
