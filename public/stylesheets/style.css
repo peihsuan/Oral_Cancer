@@ -11,7 +11,7 @@ span {
 	display:inline-block;
 }
 
-#result_CIR,#result_Life_Expentancy,#result_Life_Lost,#result_expenditure_3,#result_expenditure_5{
+#result_CIR,#result_Life_Expectancy,#result_Life_Lost,#result_expenditure_3,#result_expenditure_5{
 	font-size: 15px;
 	color: orangered;
 	font-weight: normal;
@@ -20,4 +20,13 @@ span {
 	font-size: 15px;
 	color:cadetblue;
 	font-weight: normal;
+}
+#ps{
+	text-align: right;
+	font-size: 10px;
+	font-weight: lighter;
+
+}
+#CIR_Range{
+	font-size: 12px;
 }

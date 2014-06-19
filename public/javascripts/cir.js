@@ -107,17 +107,17 @@ function Get_Result(){
   sum /= 100000;    // The table is original_rate * 10^5
   result_for_print = 1 - Math.exp(-sum);
   result_for_print *= 100;   //Because %
-            
+  document.getElementById("CIR_range").innerHTML = range_a+"-"+range_b;
   document.getElementById("result_CIR").innerHTML = result_for_print+"%";
  // document.getElementById("result_Life_Expentancy").innerHTML = Get_Life_Expentancy()+"%";
- Get_Life_Expentancy(bound_b);
+ Get_Life_Expectancy(bound_b);
  Get_Life_Lost(bound_b);
  Get_Life_Expenditure(bound_b);
  // console.log("checked_list=" + checked_list);
  // console.log(sum);
   });
 }
-function Get_Life_Expentancy(range_upper){
+function Get_Life_Expectancy(range_upper){
   var result_low=0;
   var result_high=0;
   $.getJSON("/static/info.json", function(data){
@@ -132,11 +132,11 @@ function Get_Life_Expentancy(range_upper){
         case 7:
          result_low=(data.life_expen[range].life_exp-data.life_expen[range].life_exp_SE*1.95).toFixed(1);
          result_high=(data.life_expen[range].life_exp+data.life_expen[range].life_exp_SE*1.95).toFixed(1);
-         document.getElementById("result_Life_Expentancy").innerHTML = result_low+"-"+result_high+" Years";  
+         document.getElementById("result_Life_Expectancy").innerHTML = result_low+"-"+result_high+" Years";  
         break;
         case 8:
         default:
-        document.getElementById("result_Life_Expentancy").innerHTML = "Due to the limitation of the data, there's no information could be given.";  
+        document.getElementById("result_Life_Expectancy").innerHTML = "Due to the limitation of the data, there's no information could be given.";  
         break;
       }
   });
