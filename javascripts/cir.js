@@ -49,7 +49,7 @@ function Get_Result(){
   bound_a=Math.floor(range_a/10);
   bound_b=Math.floor(range_b/10);
     
-  $.getJSON("/static/info.json", function(data){ 
+  $.getJSON("./static/info.json", function(data){ 
 
 
   //Update var c,a,b value
