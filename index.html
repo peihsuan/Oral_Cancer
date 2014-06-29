@@ -1,0 +1,66 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Oral Cancer (Males Only)</title>
+	<link rel="stylesheet" href="./stylesheets/style.css" />
+	<link rel="stylesheet" href="./themes/medical.min.css" />
+	<link rel="stylesheet" href="./themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+	<script src="./javascripts/cir.js"></script>
+<!--	<script src="/javascripts/life_exp.js"></script>
+	<script src="/javascripts/life_lost.js"></script>
+	<script src="/javascripts/3_cost.js"></script>
+	<script src="/javascripts/5_cost.js"></script>-->
+</head>
+<body>
+	<div data-role="page" data-theme="a">
+		<div data-role="header" data-position="inline">
+			<h1>Oral Cancer (Males Only)</h1>
+		</div>
+		<div data-role="content" data-theme="a">
+	<div id="c_b">
+	<form>
+    <fieldset data-role="controlgroup">
+    	<legend>The Risk Behavior:</legend>
+        <input type="checkbox" name="checkbox-v-2a" id="checkbox-v-2a" value="c">
+        <label for="checkbox-v-2a">Cigarette Smoking</label>
+        <input type="checkbox" name="checkbox-v-2b" id="checkbox-v-2b" value="a">
+        <label for="checkbox-v-2b">Alcohol Drinking</label>
+        <input type="checkbox" name="checkbox-v-2c" id="checkbox-v-2c" value="b">
+        <label for="checkbox-v-2c">Betel Quid Chewing</label>
+    </fieldset>
+    <div id="div-slider" data-role="rangeslider" data-mini="true">
+  		<label for="range-4a">Age Range:</label>
+  		<input name="range-4a" id="range-4a" min="20" max="100" value="0" type="range" />
+ 		<label for="range-4b">Rangeslider:</label>
+  		<input name="range-4b" id="range-4b" min="20" max="100" value="100" type="range" />
+    </div>
+    </form>
+    		<div>
+    		<span><label class="label_name" for="slider1">The CIR<span><label id="CIR_range"></label></span> (Cumulative Incidence Rate) of Oral Cancer:</label></span>
+			<label id="result_CIR"for="slider1"></label>
+			</div>
+
+			<div>
+			<label class="label_name" for="slider1">Life Expectancy (LE):</label>
+			<span><label id="result_Life_Expectancy"></label></span>
+			</div>
+
+			<div>
+			<label class="label_name" for="slider1">Expected Year of Life Lost (EYLL):</label>
+			<span><label id="result_Life_Lost"></label></span>
+			</div>
+
+			<label class="label_name" for="slider1">Annual Lifetime Cost:</label>
+			<span class="Discount">Discount 3%:</span> <span><label id="result_expenditure_3"></label></span>
+			<div></div>
+			<span class="Discount">Discount 5%: </span> <span><label id="result_expenditure_5"></label></span>
+
+	</div>
+	</div>
+	<label id="ps">Designed by Netdb Lab, NCKU</label>
+</body>
+</html>
