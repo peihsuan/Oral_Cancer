@@ -1,7 +1,6 @@
 var checked_list=[];
 var range_a;
 var range_b;
-var bound_a;
 var bound_b;
 
 $(document).ready(function(){
@@ -120,7 +119,7 @@ function Get_Result(){
 function Get_Life_Expectancy(range_upper){
   var result_low=0;
   var result_high=0;
-  $.getJSON("/static/info.json", function(data){
+  $.getJSON("./static/info.json", function(data){
        var range = range_upper+"0-"+range_upper+"9";
       // console.log(range);
        switch(bound_b){
@@ -144,7 +143,7 @@ function Get_Life_Expectancy(range_upper){
 function Get_Life_Lost(range_upper){
   var result_low=0;
   var result_high=0;
-  $.getJSON("/static/info.json", function(data){
+  $.getJSON("./static/info.json", function(data){
        var range = range_upper+"0-"+range_upper+"9";
       // console.log(range);
        switch(bound_b){
@@ -169,7 +168,7 @@ function Get_Life_Lost(range_upper){
 function Get_Life_Expenditure(range_upper){
   var result_low1=0;
   var result_high1=0;
-  $.getJSON("/static/info.json", function(data){
+  $.getJSON("./static/info.json", function(data){
        var range = range_upper+"0-"+range_upper+"9";
        console.log(range);
        switch(bound_b){
